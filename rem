@@ -1,0 +1,13 @@
+function gcd($a, $b) {
+    while ($b != 0) {
+        $remainder = $a % $b;
+        $a = $b;
+        $b = $remainder;
+    }
+    return $a;
+}
+
+$number1 = 36;
+$number2 = 48;
+$result = gcd($number1, $number2);
+echo "Наибольший общий делитель чисел $number1 и $number2 равен $result";
